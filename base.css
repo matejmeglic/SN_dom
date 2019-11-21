@@ -1,0 +1,19 @@
+.text-center {
+    text-align: center;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color:red;
+}
+
+.hidden {
+    display: none;
+} 
+
+.snowflake {
+    position: absolute;
+}
