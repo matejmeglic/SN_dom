@@ -14,7 +14,7 @@ let selectedSpeed;
 
 //main conversion function
 calculateMiles = () => {
-//check what radio button is selected
+//check which radio button is selected
     for(var i = 0; i < speed.length; i++) {
         if(speed[i].checked)
             selectedSpeed = speed[i].value;
