@@ -44,15 +44,16 @@ console.log(window.innerHeight, window.innerWidth)
 //let windowHeight = window.innerHeight;
 //let windowWidth = window.innerWidth;
 
-windowHeight = 1000;
-windowWidth = 1900;
+let windowHeight = 1000;
+let windowWidth = 1900;
 
 for (let i = 0; i < 500; i++) {
     let snowflake = document.createElement("p");
     snowflake.classList.add("snowflake");
     snowflake.innerText = "*";
     let width = Math.random() * 100;
-    snowflake.setAttribute("style", "left:" + width + "px;")
+    let height = Math.random() * 100;
+    snowflake.setAttribute("style", "left:" + width + "px; height:"+height+"px;");
     //add new snowflake to the body html
     document.body.appendChild(snowflake);
 }
@@ -63,8 +64,7 @@ let snowflakes = document.getElementsByClassName("snowflake");
 setInterval(function () {
     for (let i = 0; i < snowflakes.length; i++) {
         let snowflake = snowflakes[i];
-        console.log(snowflake.getBoundingClientRect().left, snowflake.getBoundingClientRect().top);
-
+     
         let y = snowflake.getBoundingClientRect().top;
         let x = snowflake.getBoundingClientRect().left;
 

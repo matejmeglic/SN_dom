@@ -1,0 +1,18 @@
+.dark {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
