@@ -43,11 +43,7 @@ document.getElementById("search").value = "TEXT!"; // definiranje besedila v inp
 
 
 // cookie
-let userSettings = {
-    "language" :"en",
-    "volume" : 100,
-    "bg-color": "#123456"
-}
+
 
 document.cookie = JSON.stringify(userSettings); //save as JSON text, to read use JSON.parse() - not currently working in Chrome, check in Firefox - smth with domain
 // or simple as below
