@@ -23,7 +23,7 @@ searchInput.addEventListener("keypress", function (e) {                // execut
 
 // I created DUAL paginations, each containing multiple elements (buttons AND spans) with the same class (one for buttons and another for spans). 
 // This code is needed for checking which element was selected AND extracting appropriate URL from the element
-// This was c/p from stackOverflow - read what it actually does
+// This was c/p from stackOverflow - read what it actually does 
 if (document.addEventListener) {
     document.addEventListener("click", handleClick, false); // I have no idea what this part does either.
 }
