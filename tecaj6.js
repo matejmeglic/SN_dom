@@ -67,6 +67,8 @@ function executeOnSearch(selectedPage) {
     createSearchResults(SearchUrl); // run search OMDB function
 }
 
+function funkA(span){ let url = span.getAttribute("url"); console.log(url);}
+
 // This function runs search and creates HTML schema for both paginations and search results
 // Needs to be revisited to extract search (GET) part from write HTML (POST?) part. Not today.
 function createSearchResults(url) {
@@ -107,7 +109,7 @@ function createSearchResults(url) {
                     pageA.setAttribute("url", `page=${pageCounter}&`);  // set JSON path
                     pageA.innerText+="  ";                              // this is just space for nicer layout
                    // Q: NOT NEEDED IN ORDER THIS FUNCTION TO WORK BUT... if i set this, I get some results, but function is executed immediatelly, not on click! WHY?
-                    // pageA.addEventListener("click", function(){executeOnPageClick(page.href)}); 
+                     pageA.addEventListener("click", function () {funkA(this)}); //executeOnPageClick(page.href) - kliči funkcijo 
                     realPagination_a.appendChild(pageA); 
                     
                     // BUTTON Pagination
